@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "git://github.com/kamilkp/angular-sortable-view#102315aad65045c6891fecd076e32a0ec1b51766",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "git://github.com/kamilkp/angular-sortable-view#102315aad65045c6891fecd076e32a0ec1b51766",
+        "spec": "git://github.com/kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+          "sshUrl": "git+ssh://git@github.com/kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+          "httpsUrl": "git+https://github.com/kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+          "gitUrl": "git://github.com/kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+          "shortcut": "github:kamilkp/angular-sortable-view#102315aad65045c6891fecd076e32a0ec1b51766",
+          "directUrl": "https://raw.githubusercontent.com/kamilkp/angular-sortable-view/102315aad65045c6891fecd076e32a0ec1b51766/package.json"
+        }
+      },
+      "/root/projects/defina-se-backoffice-ui"
+    ]
+  ],
+  "_from": "git://github.com/kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+  "_id": "angular-sortable-view@0.0.17",
+  "_inCache": true,
+  "_location": "/angular-sortable-view",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "git://github.com/kamilkp/angular-sortable-view#102315aad65045c6891fecd076e32a0ec1b51766",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "git://github.com/kamilkp/angular-sortable-view#102315aad65045c6891fecd076e32a0ec1b51766",
+    "spec": "git://github.com/kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+      "sshUrl": "git+ssh://git@github.com/kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+      "httpsUrl": "git+https://github.com/kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+      "gitUrl": "git://github.com/kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+      "shortcut": "github:kamilkp/angular-sortable-view#102315aad65045c6891fecd076e32a0ec1b51766",
+      "directUrl": "https://raw.githubusercontent.com/kamilkp/angular-sortable-view/102315aad65045c6891fecd076e32a0ec1b51766/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git://github.com/kamilkp/angular-sortable-view.git#102315aad65045c6891fecd076e32a0ec1b51766",
+  "_shasum": "4bb5e584426a89b77f8b2e25c1999b5f6f5f4778",
+  "_shrinkwrap": null,
+  "_spec": "git://github.com/kamilkp/angular-sortable-view#102315aad65045c6891fecd076e32a0ec1b51766",
+  "_where": "/root/projects/defina-se-backoffice-ui",
+  "author": {
+    "name": "Kamil Pekala",
+    "email": "kamilkp@gmail.com",
+    "url": "http://github.com/kamilkp"
+  },
+  "bugs": {
+    "url": "https://github.com/kamilkp/angular-sortable-view/issues"
+  },
+  "dependencies": {},
+  "description": "Fully declarative (multi)sortable for AngularJS",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.4.0"
+  },
+  "gitHead": "102315aad65045c6891fecd076e32a0ec1b51766",
+  "homepage": "http://kamilkp.github.io/angular-sortable-view",
+  "main": "./src/angular-sortable-view.js",
+  "name": "angular-sortable-view",
+  "optionalDependencies": {},
+  "readme": "angular-sortable-view v0.0.17 [![Bower version](https://badge.fury.io/bo/angular-sortable-view.svg)](http://badge.fury.io/bo/angular-sortable-view)\n=================\n\nFully declarative (multi)sortable for AngularJS\n\nDemo: http://kamilkp.github.io/angular-sortable-view/\n\nYou can find the source code for this demo on branch \"gh-pages\".\n\nAlso see the changelog [here](https://github.com/kamilkp/angular-sortable-view/blob/master/CHANGELOG.md)\n\n###DESCRIPTION:\n\nThis is a simple library written as a module for [AngularJS](https://github.com/angular/angular.js) for sorting elements in the UI. It supports both single elements list, and multiple connected lists, where an element can be moved from one to another.\n\nThis library requires ***no dependencies whatsoever*** (except angular.js of course), so ***you no longer need to include jQuery and jQueryUI and angularUI*** which altogether gives the size of around ***340kB minified***. Whereas the [angular-sortable-view](https://github.com/kamilkp/angular-sortable-view) is only ***5kB minified!***.\n\n###API:\n\nThe API is declarative. There are four directives (hooked on attributes) that need to be nested properly:\n\n  * `sv-root` - this is where all the logic is happening. If multiple lists should be connected with each other so that elements can be moved between them and they have a common ancestor, put this attribute on that element. If not and you still want the multi-sortable behaviour a value for that attribue must be provided. That value will be used as an identifier to connect those roots together. Optionnally you can add `sv-disabled=boolean` to deactive dragging.\n    **Optional attributes:**\n    * `sv-on-sort` - The expression passed as a value of that attribute will be evaluated when elements order has changed after sorting. Several parameters can be injected there like: `sv-on-sort=\"foo($item, $partFrom, $partTo, $indexFrom, $indexTo)\"` where:\n\t\t\t\t<ul>\n\t\t\t\t\t<li>`$item` is the item in model which has been moved</li>\n\t\t\t\t\t<li>`$partFrom` is the part from which the $item originated</li>\n\t\t\t\t\t<li>`$partTo` is the part to which the $item has been moved</li>\n\t\t\t\t\t<li>`$indexFrom` is the previous index of the $item in $partFrom</li>\n\t\t\t\t\t<li>`$indexTo` is the index of the $item in $partTo</li>\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t\t<li>`sv-on-start` - The expression passed as a value of that attribute will be evaluated when a user starts moving an element. Several parameters can be injected there like: `sv-on-start=\"bar($item, $part, $index, $helper)\"` where:\n\t\t\t\t<ul>\n\t\t\t\t\t<li>`$item` is the item in model which started being moved</li>\n\t\t\t\t\t<li>`$part` is the part from which the $item originates</li>\n\t\t\t\t\t<li>`$index` is the index of the $item in $part</li>\n\t\t\t\t\t<li>`$helper` is the jqLite/jQuery object of an element that is being dragged around</li>\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t\t<li>`sv-on-stop` - The expression passed as a value of that attribute will be evaluated when a user stops moving an element (drops it). This will be called regardless of the fact whether elements have been reordered or now. Several parameters can be injected there like: `sv-on-stop=\"baz($item, $part, $index)\"` where:\n\t\t\t\t<ul>\n\t\t\t\t\t<li>`$item` is the item in model which started being moved</li>\n\t\t\t\t\t<li>`$part` is the part from which the $item originates</li>\n\t\t\t\t\t<li>`$index` is the index of the $item in $part</li>\n\t\t\t\t</ul>\n\t\t\t</li>\n  * `sv-part` - this attribute should be placed on an element that is a container for the `ngRepeat`'ed elements. Its value should be the same as the right hand side expression in `ng-repeat` attribute.\n  * `sv-element` - this attribute should be placed on the same element as `ng-repeat` attribute. Its (optional) value should be an expression that evaluates to the options object. Optionnally you can add `sv-disabled=boolean` to deactive dragging on this element.\n  * `sv-handle` - this attribute is optional. If needed it can be placed on an element within the sortable element. This element will be the handle for sorting operations.\n  * `sv-helper` - the element with this attribute will serve as a custom helper for sorting operations\n  * `sv-placeholder` - the element with this attribute will serve as a custom placeholder for sorting operations\n\n###Example of single sortable list\n\n```html\n<div sv-root sv-part=\"modelArray\">\n\t<div ng-repeat=\"item in modelArray\" sv-element>\n\t\t<div>{{item}}</div>\n\t</div>\n</div>\n```\n\n###Example of multiple sortable lists with common ancestor\n\n```html\n<div sv-root>\n\t<div sv-part=\"modelArray1\">\n\t\t<div ng-repeat=\"item in modelArray1\" sv-element>\n\t\t\t<div>{{item}}</div>\n\t\t</div>\n\t</div>\n\t<div sv-part=\"modelArray2\">\n\t\t<div ng-repeat=\"item in modelArray2\" sv-element>\n\t\t\t<div>{{item}}</div>\n\t\t</div>\n\t</div>\n</div>\n```\n\n###Example of multiple sortable lists without common ancestor\n\n```html\n<div>\n\t<div sv-root=\"someUniqueId\" sv-part=\"modelArray1\">\n\t\t<div ng-repeat=\"item in modelArray1\" sv-element>\n\t\t\t<div>{{item}}</div>\n\t\t</div>\n\t</div>\n\t<div sv-root=\"someUniqueId\" sv-part=\"modelArray2\">\n\t\t<div ng-repeat=\"item in modelArray2\" sv-element>\n\t\t\t<div>{{item}}</div>\n\t\t</div>\n\t</div>\n</div>\n```\n\n###Example of using handles\n\n```html\n<div sv-root sv-part=\"modelArray\">\n\t<div ng-repeat=\"item in modelArray\" sv-element>\n\t\t<div>{{item}}</div>\n\t\t<span sv-handle>`\n\t</div>\n</div>\n```\n\n###Example of using custom helpers per part\n\n```html\n<div sv-root sv-part=\"modelArray\">\n\t<div sv-helper>\n\t\tcustom helper\n\t</div>\n\t<div ng-repeat=\"item in modelArray\" sv-element>\n\t\t{{item}}\n\t</div>\n</div>\n```\n\n###Example of using custom helpers per element\n\n```html\n<div sv-root sv-part=\"modelArray\">\n\t<div ng-repeat=\"item in modelArray\" sv-element>\n\t\t<div sv-helper>\n\t\t\tcustom helper {{item}}\n\t\t</div>\n\t\t{{item}}\n\t</div>\n</div>\n```\n\n###Example of using custom placeholders per part\n\n```html\n<div sv-root sv-part=\"modelArray\">\n\t<div sv-placeholder>\n\t\tcustom placeholder\n\t</div>\n\t<div ng-repeat=\"item in modelArray\" sv-element>\n\t\t{{item}}\n\t</div>\n</div>\n```\n\n###Example of using custom placeholders per element\n\n```html\n<div sv-root sv-part=\"modelArray\">\n\t<div ng-repeat=\"item in modelArray\" sv-element>\n\t\t<div sv-placeholder>\n\t\t\tcustom placeholder {{item}}\n\t\t</div>\n\t\t{{item}}\n\t</div>\n</div>\n```\n\n###Example of sorting with images\n_Because images are draggable by default the browser will trigger the default behavior of showing an image's ghost on a drag event rather than the mousedown event listener relied on by this module, disabling that drag behavior leaves the element free to move immediately._\n\n```html\n<div sv-root sv-part=\"photosArray\">\n\t<div ng-repeat=\"photo in photosArray\" sv-element>\n\t\t<img draggable=\"false\" ng-src=\"{{photo.url}}\" />\n\t</div>\n</div>\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilkp/angular-sortable-view.git"
+  },
+  "scripts": {
+    "test": "grunt travis"
+  },
+  "version": "0.0.17"
+}
